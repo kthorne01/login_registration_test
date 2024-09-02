@@ -1,4 +1,5 @@
 // script.js
+// sends credentials to the backend and manages authentication tokens.
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -16,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         password: password
     };
     
-    fetch('https://your-api-gateway-endpoint/login', { // Replace with your API Gateway endpoint
+    fetch('https://tqbcrvfn6i.execute-api.us-east-1.amazonaws.com/prod/login', { // Replace with your API Gateway endpoint
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

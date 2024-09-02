@@ -1,4 +1,5 @@
 //  register.js
+// user registration by sending the username and password to the backend
 
 document.getElementById('registerForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -16,7 +17,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
         password: password
     };
     
-    fetch('https://your-api-gateway-endpoint/register', { // Replace with your API Gateway endpoint
+    fetch('https://tqbcrvfn6i.execute-api.us-east-1.amazonaws.com/prod/register', { // Replace with your API Gateway endpoint
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
